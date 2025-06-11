@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g4mless Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans min-h-screen flex flex-col">
+    <nav class="fixed top-0 w-full bg-neutral-800 border-b border-neutral-700 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-10">
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-neutral-100 hover:text-neutral-400 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="contact.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>    <main class="container mx-auto px-4 pt-24 pb-12 flex-grow">        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-6">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6 mb-12">
+                <a href="https://github.com/g4mless/import" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold text-violet-200 mb-2">Import</h2>
+                                <p class="text-neutral-400">Import your task, don't hold it in your brain.</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                                <polyline points="9 11 12 14 17 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://stock.keqing.web.id" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold mb-2">
+                                    <span class="text-violet-500">Keqing</span><span class="text-white">Stock</span>
+                                </h2>
+                                <p class="text-neutral-400">Image gallery for Keqing.</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-violet-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" stroke="currentColor" stroke-width="1.5" />
+                                <circle cx="8.5" cy="8.5" r="1.5" stroke="currentColor" stroke-width="1.5" />
+                                <path d="M21 15l-5-5L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://github.com/g4mless/mathscroll" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold mb-2 text-green-400">MathScroll</h2>
+                                <p class="text-neutral-400">Doomscrolling into math quiz.</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <line x1="12" y1="5" x2="12" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                                <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>                </a>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-6">Music</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <a href="https://www.youtube.com/watch?v=vR8VtS-W-Wk" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold text-blue-400 mb-2">未来の中へ</h2>
+                                <p class="text-neutral-400">Happy Hardcore - 2024/12</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://open.spotify.com/track/179PxLrjT3vdS97pa1gwAA?si=e09ff9b8d03141a0" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold text-green-400 mb-2">Untitled Project</h2>
+                                <p class="text-neutral-400">UK Hardcore - 2025/3</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 19V5M5 12l7-7 7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://soundcloud.com/g4mless/vitality-20?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target="_blank" class="block">
+                    <div class="bg-neutral-800/50 rounded-lg p-6 hover:bg-neutral-800 transition-colors group">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <h2 class="text-xl font-bold text-blue-500 mb-2">Vitality</h2>
+                                <p class="text-neutral-400">UK Hardcore - Released 2024/1</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

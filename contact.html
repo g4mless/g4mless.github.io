@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g4mless Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans min-h-screen flex flex-col">
+    <nav class="fixed top-0 w-full bg-neutral-800 border-b border-neutral-700 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-10">
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="contact.html" class="text-neutral-100 hover:text-neutral-400 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>    <main class="container mx-auto px-4 pt-24 pb-12 flex-grow">
+        <div class="max-w-3xl mx-auto">
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-neutral-800 rounded-lg shadow-lg p-6">
+                    <h2 class="text-xl font-bold mb-4">Contact Me</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3 text-neutral-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <span>g4mless@proton.me</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-neutral-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <span>Tangerang, Indonesia</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-6">
+                        <div class="flex space-x-4">
+                            <!-- Github -->
+                            <a href="https://github.com/g4mless" class="text-neutral-400 hover:text-neutral-100" aria-label="GitHub" target="_blank" rel="noopener">
+                                <svg class="h-6 w-6" aria-hidden="true" focusable="false" viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                </svg>
+                            </a>
+                            <!-- Facebook -->
+                            <a href="https://facebook.com/g4mless/" class="text-neutral-400 hover:text-neutral-100" aria-label="Facebook" target="_blank" rel="noopener">
+                                <svg class="h-6 w-6" aria-hidden="true" focusable="false" viewBox="0 0 320 512" fill="currentColor">
+                                    <path d="M279.14 288l14.22-92.66h-88.91V127.91c0-25.35 12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.22 0-121.09 44.38-121.09 124.72v70.62H22.89V288h81.38v224h100.2V288z"/>
+                                </svg>
+                            </a>
+                            <!-- X (Twitter) -->
+                            <a href="https://x.com/g4mless" class="text-neutral-400 hover:text-neutral-100" aria-label="X" target="_blank" rel="noopener">
+                                <svg class="h-6 w-6" aria-hidden="true" focusable="false" viewBox="0 0 512 512" fill="currentColor">
+                                    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                                </svg>
+                            </a>
+                            <!-- SoundCloud -->
+                            <a href="https://on.soundcloud.com/jAy86U2rGyXtjRdTqz" class="text-neutral-400 hover:text-neutral-100" aria-label="SoundCloud" target="_blank" rel="noopener">
+                                <svg class="h-6 w-6" aria-hidden="true" focusable="false" viewBox="0 0 640 512" fill="currentColor">
+                                    <path d="M537.6 226.6c-7.5 0-14.7 1.1-21.6 3.1C507.2 142.7 440.2 80 358.4 80c-13.2 0-26.1 1.7-38.4 4.9V432h217.6c61.9 0 112-50.1 112-112 0-61.9-50.1-112-112-112zm-409.6 32c-8.8 0-16 7.2-16 16v112c0 8.8 7.2 16 16 16s16-7.2 16-16V274.6c0-8.8-7.2-16-16-16zm64-32c-8.8 0-16 7.2-16 16v144c0 8.8 7.2 16 16 16s16-7.2 16-16V242.6c0-8.8-7.2-16-16-16zm64-32c-8.8 0-16 7.2-16 16v176c0 8.8 7.2 16 16 16s16-7.2 16-16V210.6c0-8.8-7.2-16-16-16z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div></svg>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g4mless</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans min-h-screen flex flex-col">
+    <nav class="fixed top-0 w-full bg-neutral-800 border-b border-neutral-700 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-10">
+                <div class="flex space-x-4">
+                    <a href="index.html" class="text-neutral-100 hover:text-neutral-400 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="contact.html" class="text-neutral-400 hover:text-neutral-100 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>    <main class="container mx-auto px-4 pt-24 pb-12 flex-grow">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-neutral-800 rounded-lg shadow-lg p-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-48 h-48 rounded-full overflow-hidden bg-neutral-700">
+                        <img src="./profile.png" alt="Profile Picture" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex-1 text-center md:text-left">
+                        <h1 class="text-3xl font-medium mb-4">g4mless</h1>
+                        <h2 class="text-xl text-neutral-400 mb-4">Hobbyist</h2>
+                        <p class="text-neutral-300 leading-relaxed">
+                            A hobbyist developer and also Music Composer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-neutral-800 rounded-lg shadow-lg p-8">                <h2 class="text-2xl font-bold mb-6">About Me</h2>
+                <div class="space-y-4 text-neutral-300">
+                    <p>
+                        Having Game Dev, Frontend, Backend experience, Mobile dev, and most of them are just in entry level except for Game Dev. Also love to compose music, especially in Electronic genre. Most of my music are influenced by Rhythm Game music, and Japanese hardcore. Currently learning more about backend.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
