@@ -5,6 +5,9 @@ theme = 'github-style'
 pygmentsCodeFences = true
 pygmentsUseClasses = true
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params]
   author = "g4mless"
   description = "In solitude, where we are least alone."

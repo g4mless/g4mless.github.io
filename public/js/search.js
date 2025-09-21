@@ -1,6 +1,11 @@
 (() => {
   fetch('/index.json')
-  .then(response => response.json())
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return response.json();
+  })
   .then(data => {
     const fuse = new Fuse(data, {
       keys: ['title', 'content'],
@@ -11,7 +16,13 @@
       ignoreLocation: true,
     })
   
-    document.getElementById('search-form').addEventListener('submit', function (e) {
+    const searchForm = document.getElementById('search-form');
+    if (!searchForm) {
+      console.error('Search form element not found!');
+      return;
+    }
+    
+    searchForm.addEventListener('submit', function (e) {
       e.preventDefault();
       const data = new FormData(e.target)
       // data.entries() returns iterator, [...data.entries()] returns [["q", "input"]]
@@ -19,6 +30,9 @@
       const results = fuse.search(input)
       displayResults(input, results)
     });
+  })
+  .catch(error => {
+    console.error('Error loading search index:', error);
   });
 })();
 
