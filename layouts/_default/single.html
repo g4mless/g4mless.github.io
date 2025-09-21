@@ -25,7 +25,9 @@
               {{ if .Site.Params.lastmod }}
               <span class="mr-2">•</span>
               <span class="text-muted">
-                Updated {{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05" }}
+                Modified <relative-time datetime="{{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}"
+                    class="no-wrap">
+                    {{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</relative-time>
               </span>
               {{ end }}
             </div>
