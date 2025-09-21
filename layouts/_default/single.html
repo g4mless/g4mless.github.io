@@ -19,12 +19,14 @@
                 By <a href="{{ .Site.BaseURL }}" class="text-bold">{{ .Site.Params.author }}</a>
               </span>
               <span class="mr-2">•</span>
-              <time datetime="{{ .PublishDate.Format "2006-01-02" }}" class="mr-2">
-                {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05" }}
-              </time>
+              <span class="mr-2">
+                Created <relative-time datetime="{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}"
+                  class="no-wrap">
+                  {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</relative-time>
+              </span>
               {{ if .Site.Params.lastmod }}
               <span class="mr-2">•</span>
-              <span class="text-muted">
+              <span class="text-muted mr-2">
                 Modified <relative-time datetime="{{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}"
                     class="no-wrap">
                     {{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</relative-time>
