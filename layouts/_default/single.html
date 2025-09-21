@@ -24,14 +24,6 @@
                   class="no-wrap">
                   {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</relative-time>
               </span>
-              {{ if .Site.Params.lastmod }}
-              <span class="mr-2">•</span>
-              <span class="text-muted mr-2">
-                Modified <relative-time datetime="{{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}"
-                    class="no-wrap">
-                    {{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</relative-time>
-              </span>
-              {{ end }}
             </div>
           </div>
         </div>
