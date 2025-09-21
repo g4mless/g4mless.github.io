@@ -196,6 +196,12 @@
   transform: translateY(-1px);
 }
 
+/* Layout Fixes */
+.article-content {
+  width: 100%;
+  max-width: none;
+}
+
 /* Responsive Enhancements */
 @media (max-width: 768px) {
   .article-content {
@@ -221,6 +227,11 @@
 
   .article-meta > div {
     margin-bottom: 0.75rem !important;
+  }
+
+  .article-sidebar {
+    position: relative !important;
+    top: auto !important;
   }
 }
 

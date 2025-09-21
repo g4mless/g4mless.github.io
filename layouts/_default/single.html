@@ -81,61 +81,9 @@
             </div>
           </div>
         </div>
-
-        <!-- Article Sidebar -->
-        <div class="col-lg-3 col-md-3 ml-auto">
-          <div class="article-sidebar sticky-top" style="top: 2rem;">
-            <!-- Author Card -->
-            <div class="Box bg-gray-light p-3 mb-4">
-              <div class="d-flex align-items-center mb-2">
-                <img class="avatar avatar-small mr-2"
-                  src="{{ with $.Site.Params.avatar }}{{ $.Site.Params.avatar }}{{ else }}{{ "images/avatar.png" | absURL }}{{ end }}"
-                  width="32" height="32">
-                <div>
-                  <h6 class="mb-0">{{ .Site.Params.author }}</h6>
-                  <small class="text-gray">{{ .Site.Params.location }}</small>
-                </div>
-              </div>
-              <p class="text-small text-gray mb-0">{{ .Site.Params.description }}</p>
-            </div>
-
-            <!-- Recent Posts -->
-            {{ $recentPosts := (where .Site.RegularPages "Type" "post") | first 5 }}
-            {{ if $recentPosts }}
-            <div class="Box bg-gray-light p-3 mb-4">
-              <h6 class="mb-3">Recent Posts</h6>
-              <div class="list-style-none">
-                {{ range $recentPosts }}
-                <a href="{{ .Permalink }}" class="d-block py-2 text-small">
-                  <div class="text-bold">{{ .Title }}</div>
-                  <div class="text-gray">{{ .PublishDate.Format "Jan 2" }}</div>
-                </a>
-                {{ end }}
-              </div>
-            </div>
-            {{ end }}
-
-            <!-- Tags -->
-            {{ with .Params.tags }}
-            <div class="Box bg-gray-light p-3">
-              <h6 class="mb-3">Tags</h6>
-              <div class="d-flex flex-wrap">
-                {{ range $tag := . }}
-                <a href="{{ relURL (print "/tags/" . | urlize) }}" class="mb-2 mr-2">
-                  <span class="IssueLabel bg-gray text-gray-dark px-2 py-1 rounded-1 text-small">{{ $tag }}</span>
-                </a>
-                {{ end }}
-              </div>
-            </div>
-            {{ end }}
-          </div>
-        </div>
       </div>
     </div>
   </article>
-
-  <!-- Comments Section -->
-  {{ partial "gitalk.html" . }}
 </div>
 
 <!-- Custom CSS for Article Styling -->
@@ -219,13 +167,10 @@
   color: var(--color-accent-fg);
 }
 
-.sticky-top {
-  top: 2rem;
-}
-
 @media (max-width: 768px) {
   .article-sidebar {
     margin-top: 3rem;
+    position: relative !important;
   }
 }
 </style>
