@@ -124,101 +124,88 @@
 
   
 <div class="application-main">
-  <div>
-  <main>
-    <div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
-      <div class="px-0">
-        <div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
-          <div class="flex-auto min-width-0 width-fit mr-3">
-            <div class="d-flex">
-              <div class="d-none d-md-block">
-                <a class="avatar mr-2 flex-shrink-0" href="http://localhost:1313/">
-                  <img class=" avatar-user"
-                    src="/images/avatar.png"
-                    width="32" height="32"></a>
-              </div>
-              <div class="d-flex flex-column">
-                <h1 class="break-word f3 text-normal mb-md-0 mb-1">
-                  <span class="author">
-                    <a href="http://localhost:1313/">g4mless</a>
-                  </span>
-                  <span class="path-divider">/</span>
-                  <strong class="css-truncate css-truncate-target mr-1" style="max-width: 410px">
-                    <a href="http://localhost:1313/post/kenapa_pake_hugo/">Kenapa pake Hugo?</a>
-                  </strong>
-                </h1>
-                <div class="note m-0">
-                  Created <relative-time datetime="Sun, 21 Sep 2025 09:58:41 &#43;0700"
-                    class="no-wrap">
-                    Sun, 21 Sep 2025 09:58:41 &#43;0700</relative-time>
-
-                  
-                  <span class="file-info-divider"></span>
-                  Modified <relative-time datetime="Sun, 21 Sep 2025 12:52:55 &#43;0700"
-                    class="no-wrap">
-                    Sun, 21 Sep 2025 12:52:55 &#43;0700</relative-time>
-                  
-                </div>
-              </div>
+  <article class="article-page">
+    
+    <header class="article-header bg-gray-light border-bottom">
+      <div class="container-lg px-3 py-4">
+        <div class="d-flex align-items-center mb-3">
+          <div class="d-none d-md-block mr-3">
+            <a class="avatar" href="http://localhost:1313/">
+              <img class="avatar-user rounded-2"
+                src="/images/avatar.png"
+                width="48" height="48">
+            </a>
+          </div>
+          <div class="flex-auto">
+            <h1 class="h2 mb-1">Kenapa pake Hugo?</h1>
+            <div class="d-flex flex-wrap align-items-center text-gray">
+              <span class="author mr-2">
+                By <a href="http://localhost:1313/" class="text-bold">g4mless</a>
+              </span>
+              <span class="mr-2">•</span>
+              <time datetime="2025-09-21" class="mr-2">
+                September 21, 2025
+              </time>
+              
+              <span class="mr-2">•</span>
+              <span class="text-muted">
+                Updated September 21, 2025
+              </span>
+              
             </div>
           </div>
         </div>
+
+        
+        <div class="article-meta d-flex flex-wrap align-items-center">
+          <div class="d-flex align-items-center mr-4 mb-2">
+            <svg class="octicon octicon-clock text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.25.25l2 2a.75.75 0 001.5-1.5L9 7.25V4.75z"></path>
+            </svg>
+            <span class="text-gray">350 words</span>
+          </div>
+
+          
+          <div class="d-flex align-items-center mb-2">
+            <svg class="octicon octicon-tag text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+            </svg>
+            <div class="d-flex flex-wrap">
+              
+              <a href="/tags/hugo" class="mr-2 mb-1">
+                <span class="IssueLabel bg-gray-light text-gray px-2 py-1 rounded-1">hugo</span>
+              </a>
+              
+              <a href="/tags/blogging" class="mr-2 mb-1">
+                <span class="IssueLabel bg-gray-light text-gray px-2 py-1 rounded-1">blogging</span>
+              </a>
+              
+            </div>
+          </div>
+          
+        </div>
       </div>
-    </div>
+    </header>
 
-    <div class="container-lg px-3 new-discussion-timeline">
-      <div class="repository-content gist-content">
-        <div>
-          <div class="js-gist-file-update-container js-task-list-container file-box">
-            <div id="file-pytest" class="file my-2">
-              <div id="post-header" class="file-header d-flex flex-md-items-center flex-items-start sticky-header" style="z-index: 2">
-                <div class="file-info d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
-                  <div class="text-mono f6 flex-auto pr-3 flex-order-2 flex-md-order-1 mt-2 mt-md-0">
-                    
-                    <summary id="toc-toggle" onclick="clickToc()" class="btn btn-octicon m-0 mr-2 p-2">
-                      <svg aria-hidden="true" viewBox="0 0 16 16" height="16" width="16" class="octicon octicon-list-unordered">
-                        <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
-                      </svg>
-                    </summary>
-                    <details-menu class="SelectMenu" id="toc-details" style="display: none;">
-                      <div class="SelectMenu-modal rounded-3 mt-1" style="max-height: 340px;">
-                        <div class="SelectMenu-list SelectMenu-list--borderless p-2" style="overscroll-behavior: contain;" id="toc-list">
-                        </div>
-                      </div>
-                    </details-menu>
-                      350 Words
-                    
-
-                  </div>
-                  <div class="file-actions flex-order-2 pt-0">
-                    
-                    
-                    <a class="muted-link mr-3" href="/tags/hugo">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      hugo
-                    </a>
-                    
-                    <a class="muted-link mr-3" href="/tags/blogging">
-                      <svg class="octicon octicon-tag" viewBox="0 0 16 16" version="1.1" width="16" height="16">
-                        <path fill-rule="evenodd"
-                          d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z">
-                        </path>
-                      </svg>
-                      blogging
-                    </a>
-                    
-                    
-                  </div>
-                </div>
+    
+    <div class="container-lg px-3 py-5">
+      <div class="row">
+        <div class="col-lg-8 col-md-9 mx-auto">
+          <div class="article-content">
+            
+            <div class="toc-container mb-5" style="display: none;" id="toc-container">
+              <div class="toc-header d-flex align-items-center mb-3">
+                <svg class="octicon octicon-list-unordered mr-2" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                </svg>
+                <h6 class="toc-title mb-0">Table of Contents</h6>
               </div>
+              <div id="toc-list" class="toc-list pl-3"></div>
+            </div>
 
-
-              <div class="Box-body px-5 pb-5" style="z-index: 1">
-                <article class="markdown-body entry-content container-lg"><p>Sebelumnya, saya pernah mencoba membuat blog menggunakan WordPress. Namun, menurut saya WordPress kurang nyaman dipakai kalau kalian penikmat gratisan. Pilihan tema gratisnya terbatas, UI editornya kurang intuitif, dan versi gratisannya juga menampilkan watermark serta widget bawaan WordPress.</p>
+            
+            <div class="markdown-body">
+              <p>Sebelumnya, saya pernah mencoba membuat blog menggunakan WordPress. Namun, menurut saya WordPress kurang nyaman dipakai kalau kalian penikmat gratisan. Pilihan tema gratisnya terbatas, UI editornya kurang intuitif, dan versi gratisannya juga menampilkan watermark serta widget bawaan WordPress.</p>
 <p><img src="wp_ss.png" alt="wordpress_screenshot">
 <em>Screenshot Halaman Wordpress g4mless.wordpress.com</em></p>
 <p>Saat itu saya udah malas buat nyobain wordpress lagi dan juga mengubur niat saya untuk blogging. Sampai akhirnya di hari saya mengetik artikel ini saya teringat ada framework yang sangat ringan yang cocok untuk blogging, yaitu Hugo.</p>
@@ -239,20 +226,166 @@
 </ul>
 <h2 id="penutup">Penutup</h2>
 <p>Bagi saya, Hugo adalah pilihan yang tepat untuk memulai kembali aktivitas blogging. Karena saya sudah terbiasa menggunakan alat alat developer seperti Visual Studio Code, Git, dan juga Markdown.</p>
-</article>
+
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-lg-3 col-md-3 ml-auto">
+          <div class="article-sidebar sticky-top" style="top: 2rem;">
+            
+            <div class="Box bg-gray-light p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img class="avatar avatar-small mr-2"
+                  src="/images/avatar.png"
+                  width="32" height="32">
+                <div>
+                  <h6 class="mb-0">g4mless</h6>
+                  <small class="text-gray">Indonesia</small>
+                </div>
+              </div>
+              <p class="text-small text-gray mb-0">In solitude, where we are least alone.</p>
+            </div>
+
+            
+            
+            
+            <div class="Box bg-gray-light p-3 mb-4">
+              <h6 class="mb-3">Recent Posts</h6>
+              <div class="list-style-none">
+                
+                <a href="http://localhost:1313/post/kenapa_pake_hugo/" class="d-block py-2 text-small">
+                  <div class="text-bold">Kenapa pake Hugo?</div>
+                  <div class="text-gray">Sep 21</div>
+                </a>
+                
               </div>
             </div>
+            
+
+            
+            
+            <div class="Box bg-gray-light p-3">
+              <h6 class="mb-3">Tags</h6>
+              <div class="d-flex flex-wrap">
+                
+                <a href="/tags/hugo" class="mb-2 mr-2">
+                  <span class="IssueLabel bg-gray text-gray-dark px-2 py-1 rounded-1 text-small">hugo</span>
+                </a>
+                
+                <a href="/tags/blogging" class="mb-2 mr-2">
+                  <span class="IssueLabel bg-gray text-gray-dark px-2 py-1 rounded-1 text-small">blogging</span>
+                </a>
+                
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
-  </main>
-</div>
-<script type="application/javascript" src='http://localhost:1313/js/toc.js'></script>
-<link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
+  </article>
 
   
+  
 </div>
+
+
+<style>
+.article-page {
+  min-height: 100vh;
+}
+
+.article-header {
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.article-meta {
+  font-size: 0.875rem;
+}
+
+.article-content {
+  line-height: 1.7;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-border-default);
+  padding-bottom: 0.5rem;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--color-accent-emphasis);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.article-sidebar .Box {
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+}
+
+.toc-container {
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.toc-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-fg-default);
+}
+
+.toc-list {
+  font-size: 0.875rem;
+}
+
+.toc-list a {
+  color: var(--color-fg-muted);
+  text-decoration: none;
+}
+
+.toc-list a:hover {
+  color: var(--color-accent-fg);
+}
+
+.sticky-top {
+  top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .article-sidebar {
+    margin-top: 3rem;
+  }
+}
+</style>
+
+<script type="application/javascript" src='http://localhost:1313/js/toc.js'></script>
+<link rel="stylesheet" href='http://localhost:1313/css/toc.css' />
+<link rel="stylesheet" href='http://localhost:1313/css/article.css' />
 
   <div class="footer container-xl width-full p-responsive">
   <div

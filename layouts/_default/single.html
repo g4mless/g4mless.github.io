@@ -1,0 +1,236 @@
+{{ define "content" }}
+<div class="application-main">
+  <article class="article-page">
+    <!-- Professional Article Header -->
+    <header class="article-header bg-gray-light border-bottom">
+      <div class="container-lg px-3 py-4">
+        <div class="d-flex align-items-center mb-3">
+          <div class="d-none d-md-block mr-3">
+            <a class="avatar" href="{{ .Site.BaseURL }}">
+              <img class="avatar-user rounded-2"
+                src="{{ with $.Site.Params.avatar }}{{ $.Site.Params.avatar }}{{ else }}{{ "images/avatar.png" | absURL }}{{ end }}"
+                width="48" height="48">
+            </a>
+          </div>
+          <div class="flex-auto">
+            <h1 class="h2 mb-1">{{ .Title }}</h1>
+            <div class="d-flex flex-wrap align-items-center text-gray">
+              <span class="author mr-2">
+                By <a href="{{ .Site.BaseURL }}" class="text-bold">{{ .Site.Params.author }}</a>
+              </span>
+              <span class="mr-2">•</span>
+              <time datetime="{{ .PublishDate.Format "2006-01-02" }}" class="mr-2">
+                {{ .PublishDate.Format "January 2, 2006" }}
+              </time>
+              {{ if .Site.Params.lastmod }}
+              <span class="mr-2">•</span>
+              <span class="text-muted">
+                Updated {{ .Lastmod.Format "January 2, 2006" }}
+              </span>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Article Meta -->
+        <div class="article-meta d-flex flex-wrap align-items-center">
+          <div class="d-flex align-items-center mr-4 mb-2">
+            <svg class="octicon octicon-clock text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.25.25l2 2a.75.75 0 001.5-1.5L9 7.25V4.75z"></path>
+            </svg>
+            <span class="text-gray">{{ countwords .Content }} words</span>
+          </div>
+
+          {{ with .Params.tags }}
+          <div class="d-flex align-items-center mb-2">
+            <svg class="octicon octicon-tag text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+              <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
+            </svg>
+            <div class="d-flex flex-wrap">
+              {{ range $tag := . }}
+              <a href="{{ relURL (print "/tags/" . | urlize) }}" class="mr-2 mb-1">
+                <span class="IssueLabel bg-gray-light text-gray px-2 py-1 rounded-1">{{ $tag }}</span>
+              </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </header>
+
+    <!-- Article Content -->
+    <div class="container-lg px-3 py-5">
+      <div class="row">
+        <div class="col-lg-8 col-md-9 mx-auto">
+          <div class="article-content">
+            <!-- Table of Contents (if needed) -->
+            <div class="toc-container mb-5" style="display: none;" id="toc-container">
+              <div class="toc-header d-flex align-items-center mb-3">
+                <svg class="octicon octicon-list-unordered mr-2" viewBox="0 0 16 16" width="16" height="16">
+                  <path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path>
+                </svg>
+                <h6 class="toc-title mb-0">Table of Contents</h6>
+              </div>
+              <div id="toc-list" class="toc-list pl-3"></div>
+            </div>
+
+            <!-- Article Body -->
+            <div class="markdown-body">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Article Sidebar -->
+        <div class="col-lg-3 col-md-3 ml-auto">
+          <div class="article-sidebar sticky-top" style="top: 2rem;">
+            <!-- Author Card -->
+            <div class="Box bg-gray-light p-3 mb-4">
+              <div class="d-flex align-items-center mb-2">
+                <img class="avatar avatar-small mr-2"
+                  src="{{ with $.Site.Params.avatar }}{{ $.Site.Params.avatar }}{{ else }}{{ "images/avatar.png" | absURL }}{{ end }}"
+                  width="32" height="32">
+                <div>
+                  <h6 class="mb-0">{{ .Site.Params.author }}</h6>
+                  <small class="text-gray">{{ .Site.Params.location }}</small>
+                </div>
+              </div>
+              <p class="text-small text-gray mb-0">{{ .Site.Params.description }}</p>
+            </div>
+
+            <!-- Recent Posts -->
+            {{ $recentPosts := (where .Site.RegularPages "Type" "post") | first 5 }}
+            {{ if $recentPosts }}
+            <div class="Box bg-gray-light p-3 mb-4">
+              <h6 class="mb-3">Recent Posts</h6>
+              <div class="list-style-none">
+                {{ range $recentPosts }}
+                <a href="{{ .Permalink }}" class="d-block py-2 text-small">
+                  <div class="text-bold">{{ .Title }}</div>
+                  <div class="text-gray">{{ .PublishDate.Format "Jan 2" }}</div>
+                </a>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+
+            <!-- Tags -->
+            {{ with .Params.tags }}
+            <div class="Box bg-gray-light p-3">
+              <h6 class="mb-3">Tags</h6>
+              <div class="d-flex flex-wrap">
+                {{ range $tag := . }}
+                <a href="{{ relURL (print "/tags/" . | urlize) }}" class="mb-2 mr-2">
+                  <span class="IssueLabel bg-gray text-gray-dark px-2 py-1 rounded-1 text-small">{{ $tag }}</span>
+                </a>
+                {{ end }}
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <!-- Comments Section -->
+  {{ partial "gitalk.html" . }}
+</div>
+
+<!-- Custom CSS for Article Styling -->
+<style>
+.article-page {
+  min-height: 100vh;
+}
+
+.article-header {
+  border-bottom: 1px solid var(--color-border-default);
+}
+
+.article-meta {
+  font-size: 0.875rem;
+}
+
+.article-content {
+  line-height: 1.7;
+}
+
+.article-content h1,
+.article-content h2,
+.article-content h3,
+.article-content h4,
+.article-content h5,
+.article-content h6 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.article-content h1 {
+  font-size: 2rem;
+  border-bottom: 1px solid var(--color-border-default);
+  padding-bottom: 0.5rem;
+}
+
+.article-content h2 {
+  font-size: 1.5rem;
+}
+
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+.article-content blockquote {
+  border-left: 4px solid var(--color-accent-emphasis);
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.article-sidebar .Box {
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+}
+
+.toc-container {
+  background: var(--color-canvas-subtle);
+  border: 1px solid var(--color-border-default);
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.toc-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-fg-default);
+}
+
+.toc-list {
+  font-size: 0.875rem;
+}
+
+.toc-list a {
+  color: var(--color-fg-muted);
+  text-decoration: none;
+}
+
+.toc-list a:hover {
+  color: var(--color-accent-fg);
+}
+
+.sticky-top {
+  top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .article-sidebar {
+    margin-top: 3rem;
+  }
+}
+</style>
+
+<script type="application/javascript" src='{{ "js/toc.js" | absURL }}'></script>
+<link rel="stylesheet" href='{{ "css/toc.css" | absURL }}' />
+<link rel="stylesheet" href='{{ "css/article.css" | absURL }}' />
+{{ end }}
