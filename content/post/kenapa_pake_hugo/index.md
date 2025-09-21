@@ -5,7 +5,6 @@ draft = false
 summary = "Bukan cuma ringan..."
 tags = ["hugo", "blogging"]
 +++
-# Kenapa pake Hugo?
 Sebelumnya, saya pernah mencoba membuat blog menggunakan WordPress. Namun, menurut saya WordPress kurang nyaman dipakai kalau kalian penikmat gratisan. Pilihan tema gratisnya terbatas, UI editornya kurang intuitif, dan versi gratisannya juga menampilkan watermark serta widget bawaan WordPress.
 
 ![wordpress_screenshot](wp_ss.png)
