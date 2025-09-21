@@ -35,15 +35,15 @@
         <!-- Article Meta -->
         <div class="article-meta d-flex flex-wrap align-items-center">
           <div class="d-flex align-items-center mr-4 mb-2">
-            <svg class="octicon octicon-clock text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+            <svg class="octicon octicon-clock text-gray mr-2 icon-aligned" viewBox="0 0 16 16" width="16" height="16">
               <path fill-rule="evenodd" d="M1.5 8a6.5 6.5 0 1113 0 6.5 6.5 0 01-13 0zM8 0a8 8 0 100 16A8 8 0 008 0zm.5 4.75a.75.75 0 00-1.5 0v3.5a.75.75 0 00.25.25l2 2a.75.75 0 001.5-1.5L9 7.25V4.75z"></path>
             </svg>
             <span class="text-gray">{{ countwords .Content }} words</span>
           </div>
 
           {{ with .Params.tags }}
-          <div class="d-flex align-items-center mb-2">
-            <svg class="octicon octicon-tag text-gray mr-2" viewBox="0 0 16 16" width="16" height="16">
+          <div class="d-flex align-items-center mb-2 mr-4">
+            <svg class="octicon octicon-tag text-gray mr-2 icon-aligned" viewBox="0 0 16 16" width="16" height="16">
               <path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path>
             </svg>
             <div class="d-flex flex-wrap">
@@ -172,6 +172,24 @@
     margin-top: 3rem;
     position: relative !important;
   }
+}
+
+/* Optimized icon alignment fix */
+.icon-aligned {
+  /* Use flexbox self-alignment for proper centering */
+  align-self: center;
+  
+  /* Ensure consistent display and positioning */
+  display: inline-flex;
+  
+  /* Fine-tune vertical position */
+  margin-top: 1px;
+}
+
+/* Ensure flex containers properly align icons with text */
+.article-meta .d-flex.align-items-center {
+  align-items: center;
+  line-height: 1.2;
 }
 </style>
 
