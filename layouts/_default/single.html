@@ -20,12 +20,12 @@
               </span>
               <span class="mr-2">•</span>
               <time datetime="{{ .PublishDate.Format "2006-01-02" }}" class="mr-2">
-                {{ .PublishDate.Format "January 2, 2006" }}
+                {{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05" }}
               </time>
               {{ if .Site.Params.lastmod }}
               <span class="mr-2">•</span>
               <span class="text-muted">
-                Updated {{ .Lastmod.Format "January 2, 2006" }}
+                Updated {{ .Lastmod.Format "Mon, 02 Jan 2006 15:04:05" }}
               </span>
               {{ end }}
             </div>
