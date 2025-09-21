@@ -27,4 +27,4 @@ Meskipun Hugo punya banyak kelebihan, ada beberapa hal yang bisa dianggap sebaga
 - **Kurang cocok untuk project besar yang banyak interaksi.** Misalnya e-commerce atau aplikasi web interaktif. Untuk kasus seperti itu, CMS dinamis lebih cocok. 
 
 ## Penutup
-Bagi saya, Hugo adalah pilihan yang tepat untuk memulai kembali aktivitas blogging. Karena saya sudah terbiasa menggunakan alat alat developer seperti Visual Studio Code, Git, dan juga Markdown.  
+Bagi saya, Hugo adalah pilihan yang tepat untuk memulai kembali aktivitas blogging. Karena saya sudah terbiasa menggunakan alat alat developer seperti Visual Studio Code, Git, dan juga format Markdown.  
