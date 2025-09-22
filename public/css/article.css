@@ -74,15 +74,8 @@
   font-size: 0.9rem;
 }
 
-/* Code Blocks Enhancement */
-.article-content pre {
-  border-radius: 8px;
-  border: 1px solid var(--color-border-default);
-  background: var(--color-canvas-subtle);
-  margin: 1.5rem 0;
-}
-
-.article-content code {
+/* Code Blocks Enhancement - Now handled by github-code.css */
+.article-content code:not(pre code) {
   background: var(--color-neutral-muted);
   padding: 0.2em 0.4em;
   border-radius: 4px;
@@ -242,12 +235,7 @@
     border-left-color: var(--color-accent-emphasis);
   }
 
-  .article-content pre {
-    background: var(--color-canvas-inset);
-    border-color: var(--color-border-default);
-  }
-
-  .article-content code {
+  .article-content code:not(pre code) {
     background: var(--color-neutral-muted);
   }
 }
@@ -270,7 +258,6 @@
     page-break-after: avoid;
   }
 
-  .article-content pre,
   .article-content blockquote {
     border: 1px solid #ccc;
     page-break-inside: avoid;

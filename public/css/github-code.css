@@ -1,0 +1,218 @@
+/* GitHub-style code blocks for Hugo blog */
+
+/* GitHub-like code block styling */
+.article-content pre {
+  background-color: #f6f8fa !important;
+  border: 1px solid #d1d9e0 !important;
+  border-radius: 6px !important;
+  padding: 16px !important;
+  overflow: auto !important;
+  font-size: 0.875rem !important;
+  line-height: 1.45 !important;
+  margin: 1.5rem 0 !important;
+  position: relative !important;
+}
+
+.article-content pre:hover {
+  border-color: #0969da !important;
+}
+
+.article-content pre code {
+  background: none !important;
+  padding: 0 !important;
+  font-size: inherit !important;
+  color: inherit !important;
+  border-radius: 0 !important;
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+}
+
+/* GitHub-like syntax highlighting colors */
+.article-content pre .k,
+.article-content pre .kd,
+.article-content pre .kn,
+.article-content pre .kr {
+  color: #cf222e !important; /* GitHub red for keywords */
+}
+
+.article-content pre .s,
+.article-content pre .s1,
+.article-content pre .s2,
+.article-content pre .se,
+.article-content pre .si,
+.article-content pre .sr,
+.article-content pre .ss {
+  color: #0a3069 !important; /* GitHub dark blue for strings */
+}
+
+.article-content pre .c,
+.article-content pre .c1,
+.article-content pre .cm,
+.article-content pre .cp,
+.article-content pre .cs {
+  color: #6e7681 !important; /* GitHub gray for comments */
+  font-style: italic !important;
+}
+
+.article-content pre .nf,
+.article-content pre .fm {
+  color: #8250df !important; /* GitHub purple for functions */
+}
+
+.article-content pre .nb,
+.article-content pre .bp {
+  color: #0550ae !important; /* GitHub blue for built-ins */
+}
+
+.article-content pre .nc,
+.article-content pre .no {
+  color: #953800 !important; /* GitHub orange for classes */
+}
+
+.article-content pre .o,
+.article-content pre .ow {
+  color: #cf222e !important; /* GitHub red for operators */
+}
+
+.article-content pre .n,
+.article-content pre .nv,
+.article-content pre .vc,
+.article-content pre .vg,
+.article-content pre .vi {
+  color: #24292f !important; /* GitHub dark gray for variables */
+}
+
+.article-content pre .m,
+.article-content pre .mb,
+.article-content pre .mf,
+.article-content pre .mh,
+.article-content pre .mi,
+.article-content pre .mo {
+  color: #0550ae !important; /* GitHub blue for numbers */
+}
+
+.article-content pre .p {
+  color: #24292f !important; /* GitHub dark gray for punctuation */
+}
+
+/* Inline code styling */
+.article-content code:not(pre code) {
+  background-color: rgba(175, 184, 193, 0.2) !important;
+  color: #24292f !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 3px !important;
+  font-size: 0.85em !important;
+  border: 1px solid rgba(175, 184, 193, 0.3) !important;
+}
+
+/* Copy button for code blocks (optional enhancement) */
+.article-content pre::before {
+  content: "" !important;
+  position: absolute !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 24px !important;
+  height: 24px !important;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath fill='%236e7681' d='M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25V6.75z'/%3E%3Cpath fill='%236e7681' d='M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z'/%3E%3C/svg%3E") no-repeat center !important;
+  background-size: 16px !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease !important;
+  cursor: pointer !important;
+  border-radius: 3px !important;
+}
+
+.article-content pre:hover::before {
+  opacity: 1 !important;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .article-content pre {
+    background-color: #161b22 !important;
+    border-color: #30363d !important;
+    color: #e6edf3 !important;
+  }
+
+  .article-content pre:hover {
+    border-color: #58a6ff !important;
+  }
+
+  .article-content pre .k,
+  .article-content pre .kd,
+  .article-content pre .kn,
+  .article-content pre .kr,
+  .article-content pre .o,
+  .article-content pre .ow {
+    color: #ff7b72 !important;
+  }
+
+  .article-content pre .s,
+  .article-content pre .s1,
+  .article-content pre .s2,
+  .article-content pre .se,
+  .article-content pre .si,
+  .article-content pre .sr,
+  .article-content pre .ss {
+    color: #79c0ff !important;
+  }
+
+  .article-content pre .c,
+  .article-content pre .c1,
+  .article-content pre .cm,
+  .article-content pre .cp,
+  .article-content pre .cs {
+    color: #8b949e !important;
+  }
+
+  .article-content pre .nf,
+  .article-content pre .fm {
+    color: #d2a8ff !important;
+  }
+
+  .article-content pre .nb,
+  .article-content pre .bp,
+  .article-content pre .m,
+  .article-content pre .mb,
+  .article-content pre .mf,
+  .article-content pre .mh,
+  .article-content pre .mi,
+  .article-content pre .mo {
+    color: #79c0ff !important;
+  }
+
+  .article-content pre .nc,
+  .article-content pre .no {
+    color: #ffa657 !important;
+  }
+
+  .article-content pre .n,
+  .article-content pre .nv,
+  .article-content pre .vc,
+  .article-content pre .vg,
+  .article-content pre .vi,
+  .article-content pre .p {
+    color: #e6edf3 !important;
+  }
+
+  .article-content code:not(pre code) {
+    background-color: rgba(177, 186, 196, 0.12) !important;
+    color: #e6edf3 !important;
+    border-color: rgba(177, 186, 196, 0.2) !important;
+  }
+
+  .article-content pre::before {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' width='16' height='16'%3E%3Cpath fill='%238b949e' d='M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25V6.75z'/%3E%3Cpath fill='%238b949e' d='M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z'/%3E%3C/svg%3E") no-repeat center !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .article-content pre {
+    padding: 12px !important;
+    font-size: 0.8rem !important;
+    margin: 1rem 0 !important;
+  }
+
+  .article-content pre::before {
+    display: none !important;
+  }
+}
