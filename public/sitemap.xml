@@ -2,22 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/blogging/</loc>
-    <lastmod>2025-09-21T09:58:41+07:00</lastmod>
+    <loc>http://localhost:1313/tags/android-dev/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dev/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/web_statis_jadi_aplikasi_android/</loc>
+    <lastmod>2025-09-22T20:28:49+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/blogging/</loc>
     <lastmod>2025-09-21T09:58:41+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-09-21T09:58:41+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/kenapa_pake_hugo/</loc>
-    <lastmod>2025-09-21T09:58:41+07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-09-21T09:58:41+07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-09-21T09:58:41+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>

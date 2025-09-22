@@ -6,8 +6,15 @@
     <description>Recent content on g4mless-blog</description>
     <generator>Hugo</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 21 Sep 2025 09:58:41 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 20:28:49 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web statis jadi aplikasi android</title>
+      <link>http://localhost:1313/post/web_statis_jadi_aplikasi_android/</link>
+      <pubDate>Mon, 22 Sep 2025 20:28:49 +0700</pubDate>
+      <guid>http://localhost:1313/post/web_statis_jadi_aplikasi_android/</guid>
+      <description>cara termudah buat webdev pemula bikin aplikasi android.</description>
+    </item>
     <item>
       <title>Kenapa pake Hugo?</title>
       <link>http://localhost:1313/post/kenapa_pake_hugo/</link>

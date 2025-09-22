@@ -6,8 +6,29 @@
     <description>Recent content in Tags on g4mless-blog</description>
     <generator>Hugo</generator>
     <language>id-id</language>
-    <lastBuildDate>Sun, 21 Sep 2025 09:58:41 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 22 Sep 2025 20:28:49 +0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Android-Dev</title>
+      <link>http://localhost:1313/tags/android-dev/</link>
+      <pubDate>Mon, 22 Sep 2025 20:28:49 +0700</pubDate>
+      <guid>http://localhost:1313/tags/android-dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dev</title>
+      <link>http://localhost:1313/tags/dev/</link>
+      <pubDate>Mon, 22 Sep 2025 20:28:49 +0700</pubDate>
+      <guid>http://localhost:1313/tags/dev/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>http://localhost:1313/tags/tutorial/</link>
+      <pubDate>Mon, 22 Sep 2025 20:28:49 +0700</pubDate>
+      <guid>http://localhost:1313/tags/tutorial/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blogging</title>
       <link>http://localhost:1313/tags/blogging/</link>

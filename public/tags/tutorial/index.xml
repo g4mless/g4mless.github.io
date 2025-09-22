@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on g4mless-blog</title>
-    <link>http://localhost:1313/post/</link>
-    <description>Recent content in Posts on g4mless-blog</description>
+    <title>Tutorial on g4mless-blog</title>
+    <link>http://localhost:1313/tags/tutorial/</link>
+    <description>Recent content in Tutorial on g4mless-blog</description>
     <generator>Hugo</generator>
     <language>id-id</language>
     <lastBuildDate>Mon, 22 Sep 2025 20:28:49 +0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web statis jadi aplikasi android</title>
       <link>http://localhost:1313/post/web_statis_jadi_aplikasi_android/</link>
       <pubDate>Mon, 22 Sep 2025 20:28:49 +0700</pubDate>
       <guid>http://localhost:1313/post/web_statis_jadi_aplikasi_android/</guid>
       <description>cara termudah buat webdev pemula bikin aplikasi android.</description>
-    </item>
-    <item>
-      <title>Kenapa pake Hugo?</title>
-      <link>http://localhost:1313/post/kenapa_pake_hugo/</link>
-      <pubDate>Sun, 21 Sep 2025 09:58:41 +0700</pubDate>
-      <guid>http://localhost:1313/post/kenapa_pake_hugo/</guid>
-      <description>Bukan cuma ringan&amp;hellip;</description>
     </item>
   </channel>
 </rss>
